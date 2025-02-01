@@ -43,6 +43,56 @@ input{
     border: none;
     outline: none;
     background: transparent;
-    color
     padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+    content:'N';
+    position: absolute;
+    size: cover;
+    height: 28px;
+    width: 28px;
+    border-image-repeat: 50%;
+}
+
+ul li.checked{
+    color: #ff5945;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content:'Y';
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
 }
